@@ -1,0 +1,2 @@
+Expo build link:
+https://expo.dev/accounts/p.karthick/projects/astro-mobile/builds/a3ccb108-646b-45b5-a393-9126da234b80
