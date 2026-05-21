@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In - Make Your Trip</title>
+  <link rel="stylesheet" href="signin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="signin-page">
+  <div class="signin-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="sparkle-layer" id="sparkle-layer"></div>
+    <div class="pin-layer" id="signin-pin-layer" aria-hidden="true"></div>
+  </div>
+
+  <main class="signin-container">
+    <div class="signin-card" id="signin-card">
+      <div class="card-header">
+        <h1>Welcome Back</h1>
+        <p>Sign in to continue planning your next journey.</p>
+      </div>
+
+      <div class="social-logins">
+        <button class="social-btn" data-provider="Google">Continue with Google</button>
+        <button class="social-btn" data-provider="Facebook">Continue with Facebook</button>
+      </div>
+
+      <div class="divider"><span>or sign in with email</span></div>
+
+      <form id="signin-form">
+        <label>
+          Username or Email
+          <div class="input-wrap">
+            <input type="text" id="signin-identity" placeholder="you@email.com" required />
+            <span class="input-glow"></span>
+          </div>
+        </label>
+        <label>
+          Password
+          <div class="input-wrap">
+            <input type="password" id="signin-password" placeholder="********" required />
+            <span class="input-glow"></span>
+            <button class="toggle-password" type="button" aria-label="Show password"></button>
+          </div>
+        </label>
+        <label class="robot-check">
+          <input type="checkbox" id="signin-robot" />
+          I am not a robot
+        </label>
+        <div class="form-row">
+          <button class="link-btn" type="button" id="forgot-btn">Forgot password?</button>
+        </div>
+        <button class="signin-btn" type="submit">Sign In</button>
+        <div class="signin-status" id="signin-status"></div>
+      </form>
+      <div class="card-footer">
+        <a href="signup.html">Create an account</a>
+        <a href="index.html">Back to home</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="signin.js"></script>
+</body>
+</html>
+

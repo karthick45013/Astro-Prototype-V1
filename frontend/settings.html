@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings - Make Your Trip</title>
+  <link rel="stylesheet" href="settings.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="settings-page">
+  <main class="settings-shell">
+    <header class="settings-top">
+      <a href="user.html" class="ghost-link">Back</a>
+    </header>
+
+    <section class="settings-card">
+      <h1>Settings</h1>
+      <p>Manage your account preferences for trip planning.</p>
+
+      <form id="settings-form" class="settings-form">
+        <label>Email
+          <input id="settings-email" type="email" readonly />
+        </label>
+
+        <label>Default Trip Type
+          <select id="default-trip-type">
+            <option value="budget">Budget</option>
+            <option value="moderate">Moderate</option>
+            <option value="luxury">Luxury</option>
+          </select>
+        </label>
+
+        <label>Preferred Currency
+          <select id="preferred-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+          </select>
+        </label>
+
+        <label class="toggle-row">
+          <input id="voice-shortcuts" type="checkbox" />
+          Enable voice shortcut hints
+        </label>
+
+        <div class="settings-actions">
+          <button type="submit" class="primary-btn">Save Settings</button>
+          <button id="reset-settings" type="button" class="ghost-btn">Reset Defaults</button>
+        </div>
+        <p id="settings-status" class="settings-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="settings.js"></script>
+</body>
+</html>

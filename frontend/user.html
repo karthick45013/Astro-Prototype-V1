@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard - Make Your Trip</title>
+  <link rel="preload" as="image" href="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=2200" />
+  <link rel="stylesheet" href="user.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="user-page">
+  <section class="hero hero-fx">
+    <div class="destination-carousel fx-carousel" aria-label="Destination hero showcase">
+      <div class="carousel-track">
+        <div class="carousel-slide"
+          data-title="BALI"
+          data-description="Bali is an Indonesian island known for forested volcanic mountains, iconic rice paddies, beaches, and coral reefs."
+          data-card-a-title="Kerala"
+          data-card-a-image="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-b-title="Indonesia"
+          data-card-b-image="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-c-title="Thailand"
+          data-card-c-image="https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg?auto=compress&cs=tinysrgb&w=900">
+          <img src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Aerial tropical beach with turquoise water" loading="eager" fetchpriority="high" decoding="async" />
+        </div>
+        <div class="carousel-slide"
+          data-title="INDONESIA"
+          data-description="The largest archipelago country with volcanoes, rainforests, and island coastlines that blend drama, culture, and adventure."
+          data-card-a-title="Buddha Temple"
+          data-card-a-image="https://images.pexels.com/photos/351283/pexels-photo-351283.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-b-title="Broken Beach"
+          data-card-b-image="https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-c-title="Kerala"
+          data-card-c-image="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=900">
+          <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Cinematic mountain landscape at dusk" />
+        </div>
+        <div class="carousel-slide"
+          data-title="CRUISE OCEAN"
+          data-description="Luxury waves, open horizon, and cinematic skies for travelers chasing sea winds and premium coastal escapes."
+          data-card-a-title="Mediterranean"
+          data-card-a-image="https://images.pexels.com/photos/4215113/pexels-photo-4215113.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-b-title="Santorini"
+          data-card-b-image="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-c-title="Maldives"
+          data-card-c-image="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=900">
+          <img src="https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Luxury cruise ship in dramatic ocean water" />
+        </div>
+        <div class="carousel-slide"
+          data-title="FUTURE CITY"
+          data-description="Neon-lit skylines, mirrored water reflections, and futuristic architecture built for unforgettable night adventures."
+          data-card-a-title="Dubai"
+          data-card-a-image="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-b-title="Singapore"
+          data-card-b-image="https://images.pexels.com/photos/3152127/pexels-photo-3152127.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-c-title="Tokyo"
+          data-card-c-image="https://images.pexels.com/photos/2187605/pexels-photo-2187605.jpeg?auto=compress&cs=tinysrgb&w=900">
+          <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Futuristic city skyline at night with reflections" />
+        </div>
+        <div class="carousel-slide"
+          data-title="DESERT GOLD"
+          data-description="Golden dunes and endless cinematic gradients where every sunset feels like a premium private expedition."
+          data-card-a-title="Sahara"
+          data-card-a-image="https://images.pexels.com/photos/1001435/pexels-photo-1001435.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-b-title="Dubai Dunes"
+          data-card-b-image="https://images.pexels.com/photos/131723/pexels-photo-131723.jpeg?auto=compress&cs=tinysrgb&w=900"
+          data-card-c-title="Wadi Rum"
+          data-card-c-image="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=900">
+          <img src="https://images.pexels.com/photos/248771/pexels-photo-248771.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Golden desert dunes under sunset light" />
+        </div>
+      </div>
+
+      <div class="fx-shell">
+        <div class="fx-main">
+          <div class="hero-content fx-copy">
+            <h1 id="hero-title">BALI</h1>
+            <p id="hero-description" class="hero-subtitle">Bali is an Indonesian island known for forested volcanic mountains, iconic rice paddies, beaches, and coral reefs.</p>
+          </div>
+
+          <div class="fx-cards">
+            <article class="hero-preview-card" data-card="a">
+              <h3>Kerala</h3>
+              <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kerala backwater scene" />
+            </article>
+            <article class="hero-preview-card" data-card="b">
+              <h3>Indonesia</h3>
+              <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Indonesia landscape" />
+            </article>
+            <article class="hero-preview-card" data-card="c">
+              <h3>Thailand</h3>
+              <img src="https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Thailand temple landscape" />
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="user-trip-planner" class="user-planner">
+    <div class="user-planner-head">
+      <h2>Trip Details Form</h2>
+      <p>Fill your trip basics and get a quick itinerary preview with cost estimate.</p>
+    </div>
+    <form id="user-trip-form" class="user-trip-form">
+      <div class="user-form-grid">
+        <label>From
+          <select id="user-from" required>
+            <option value="">Select city</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Bali">Bali</option>
+            <option value="New York">New York</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Rome">Rome</option>
+          </select>
+        </label>
+        <label>Destination
+          <select id="user-destination" required>
+            <option value="">Select destination</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Bali">Bali</option>
+            <option value="New York">New York</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Rome">Rome</option>
+          </select>
+        </label>
+        <label>Number of Days (1-30)
+          <input type="number" id="user-days" min="1" max="30" value="5" required />
+        </label>
+        <label>Persons (1-20)
+          <input type="number" id="user-persons" min="1" max="20" value="2" required />
+        </label>
+        <label>Trip Type
+          <select id="user-trip-type">
+            <option value="budget">Budget</option>
+            <option value="moderate" selected>Moderate</option>
+            <option value="luxury">Luxury</option>
+          </select>
+        </label>
+        <label>Currency
+          <select id="user-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+          </select>
+        </label>
+      </div>
+      <div class="user-form-actions">
+        <button class="primary" type="submit">Generate</button>
+        <button class="user-ghost-btn" id="user-reset-form" type="button">Reset</button>
+      </div>
+      <div class="user-form-status" id="user-form-status"></div>
+    </form>
+
+    <div class="user-planner-output hidden" id="user-planner-output">
+      <div class="user-output-block">
+        <h3>Itinerary Preview</h3>
+        <div id="user-itinerary-output"></div>
+      </div>
+      <div class="user-output-block">
+        <h3>Cost Estimate</h3>
+        <div class="user-cost-grid" id="user-cost-breakdown"></div>
+      </div>
+    </div>
+  </section>
+
+  <button class="feature-fab" id="feature-fab" type="button" aria-label="Open features menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="feature-menu" id="feature-menu" aria-hidden="true">
+    <button id="feature-profile" type="button">Profile</button>
+    <button id="feature-gps" type="button">GPS</button>
+    <button id="feature-settings" type="button">Settings</button>
+    <button id="feature-logout" type="button">Sign Out</button>
+  </div>
+
+  <button class="voice-assistant-icon" id="voice-icon" type="button" aria-label="AI Voice Assistant" title="AI Voice Assistant">
+    AI
+  </button>
+
+  <script src="user.js"></script>
+  <script src="user-ai.js"></script>
+</body>
+</html>
+
+
+
