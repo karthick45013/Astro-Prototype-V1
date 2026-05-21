@@ -1,0 +1,7 @@
+pyttsx3
+SpeechRecognition
+pyaudio
+PyPDF2
+python-docx
+qrcode[pil]
+mss
