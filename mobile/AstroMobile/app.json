@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Astro Mobile",
+    "slug": "astro-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f6f7f2"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.astro.assistant.mobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f6f7f2"
+      },
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e8eee513-ed68-4351-8e4b-27e75eaad182"
+      }
+    },
+    "owner": "p.karthick"
+  }
+}
